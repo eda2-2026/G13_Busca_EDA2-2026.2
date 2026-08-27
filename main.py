@@ -1,0 +1,1 @@
+## Aqui vai ser o ponto de entrada dos sistema de busca
