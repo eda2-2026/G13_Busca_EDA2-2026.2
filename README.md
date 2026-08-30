@@ -41,7 +41,7 @@ Os dados foram retirados da página pública do SIGAA da Universidade de Brasíl
 
 ![Portal Público do SIGAA](images/sigaa_portal_publico.png)
 
-## Vídeo de apresentação
 
-[![Vídeo de apresentação]( [ [https://img.youtube.com/vi/0g1k7X8J6xM/0.jpg)]([https://www.youtube.com/watch?v=0g1k7X8J6xM](https://youtu.be/FRxwLhG2Xq8)](https://youtu.be/FRxwLhG2Xq8)](https://youtu.be/FRxwLhG2Xq8))
+## Vídeo de apresentação
+[![Vídeo de apresentação](https://img.youtube.com/vi/FRxwLhG2Xq8/0.jpg)](https://youtu.be/FRxwLhG2Xq8)
 
