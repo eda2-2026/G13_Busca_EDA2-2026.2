@@ -1,39 +1,47 @@
 # G13_Busca_EDA2-2026.2
 
+## Busca Matérias UnB Gama
 
-## Busca_MateriasUnbGama
+Projeto desenvolvido para a disciplina de **Estruturas de Dados e Algoritmos 2 (EDA2)**.
 
+O programa permite buscar disciplinas ofertadas na **FCTE - UnB Gama** por código, nome ou professor.
 
-## Alunos  
-| Matrícula | Nome |  
-|-----------------------|---------------------|  
-| 22/2037675 | GABRIEL SANTOS PINTO |  
-| 23/1030691 | GUILHERME FERREIRA BRANDAO |  
+## Alunos
 
+| Matrícula | Nome |
+| --- | --- |
+| 22/2037675 | Gabriel Santos Pinto |
+| 23/1030691 | Guilherme Ferreira Brandão |
 
-## Descrição do projeto
+## Sobre o projeto
 
-O projeto consiste no desenvolvimento de um buscador de matérias da FCTE UnB-Gama, com o objetivo de facilitar a consulta de disciplinas pelos alunos.
+A base utilizada possui **134 disciplinas do período 2026.2**.
 
-A aplicação utiliza algoritmos de busca estudados na disciplina de Estruturas de Dados e Algoritmos 2 (EDA2), permitindo localizar disciplinas de forma eficiente a partir de informações como código ou nome da matéria.
+As buscas disponíveis são:
 
+- **Código:** busca binária;
+- **Nome:** tabela hash;
+- **Professor:** tabela hash.
 
-## Guia de instalação
-
-### Dependências do projeto
-
-
-### Como executar o projeto
-
-1. Clone o repositório:
+Os dados das disciplinas estão no arquivo `data/disciplinas.json` e foram obtidos a partir da consulta pública de turmas do SIGAA da UnB.
 
 
-git clone <url-do-repositorio>
+## Como executar
 
-## Capturas de tela
-Retiramos os dados da Página Pública do SIGAA, que é a plataforma oficial da UnB para consulta de disciplinas e informações acadêmicas.
-![Portal Píblico](images/sigaa_portal_publico.png)
+Basta rodar o arquivo `main.py`. O menu será exibido no terminal.
 
-## Conclusões
+## Exemplo
 
-## Referências
+![Terminal de execução do programa](images/execucao.exemplo.png)
+
+
+## Fonte dos dados
+
+Os dados foram retirados da página pública do SIGAA da Universidade de Brasília.
+
+![Portal Público do SIGAA](images/sigaa_portal_publico.png)
+
+## Vídeo de apresentação
+
+[![Vídeo de apresentação](  https://img.youtube.com/vi/0g1k7X8J6xM/0.jpg)](https://www.youtube.com/watch?v=0g1k7X8J6xM)
+
