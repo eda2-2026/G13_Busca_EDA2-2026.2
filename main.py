@@ -1,3 +1,4 @@
+from src.demonstracao_insertion import demonstrar_insertion_sort
 from src.insertion_sort import insertion_sort
 from src.carregaDados import carregar_disciplinas
 from src.busca_binaria import busca_binaria
@@ -15,7 +16,12 @@ def imprimir_resultados(resultados):
 
 def main():
     disciplinas = carregar_disciplinas()
+    print("Antes (primeiros 5 codigos do JSON): " +
+          " | ".join(d["codigo"] for d in disciplinas[:5]))
     disciplinas_ordenadas = insertion_sort(disciplinas)
+    print("Depois (primeiros 5 codigos ordenados): " +
+          " | ".join(d["codigo"] for d in disciplinas_ordenadas[:5]))
+    print(f"{len(disciplinas_ordenadas)} disciplinas ordenadas com Insertion Sort.")
     indice_nome = construir_indice_nome(disciplinas_ordenadas)
     indice_professor = construir_indice_professor(disciplinas_ordenadas)
 
@@ -23,6 +29,7 @@ def main():
         print("1 - Buscar por codigo (busca binaria)")
         print("2 - Buscar por nome (tabela hash)")
         print("3 - Buscar por professor (tabela hash)")
+        print("4 - Demonstrar Insertion Sort")
         print("0 - Sair")
         opcao = input("Opcao: ").strip()
 
@@ -36,6 +43,8 @@ def main():
         elif opcao == "3":
             professor = input("Nome do professor: ").strip()
             imprimir_resultados(busca_por_professor(indice_professor, professor))
+        elif opcao == "4":
+            demonstrar_insertion_sort(disciplinas)
         elif opcao == "0":
             break
         else:
