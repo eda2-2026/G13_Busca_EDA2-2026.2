@@ -1,3 +1,4 @@
+from src.insertion_sort import insertion_sort
 from src.carregaDados import carregar_disciplinas
 from src.busca_binaria import busca_binaria
 from src.busca_por_nome import construir_indice_nome, busca_por_nome
@@ -14,8 +15,9 @@ def imprimir_resultados(resultados):
 
 def main():
     disciplinas = carregar_disciplinas()
-    indice_nome = construir_indice_nome(disciplinas)
-    indice_professor = construir_indice_professor(disciplinas)
+    disciplinas_ordenadas = insertion_sort(disciplinas)
+    indice_nome = construir_indice_nome(disciplinas_ordenadas)
+    indice_professor = construir_indice_professor(disciplinas_ordenadas)
 
     while True:
         print("1 - Buscar por codigo (busca binaria)")
@@ -26,7 +28,7 @@ def main():
 
         if opcao == "1":
             codigo = input("Codigo: ").strip().upper()
-            r = busca_binaria(disciplinas, codigo)
+            r = busca_binaria(disciplinas_ordenadas, codigo)
             imprimir_resultados([r] if r else [])
         elif opcao == "2":
             termo = input("Palavra do nome: ").strip()
@@ -37,7 +39,8 @@ def main():
         elif opcao == "0":
             break
         else:
-            print("Opcaoo invalida.")
+            print("Opcao invalida.")
 
 
-main()
+if __name__ == "__main__":
+    main()

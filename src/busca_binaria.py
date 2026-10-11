@@ -1,11 +1,11 @@
 def busca_binaria(disciplinas, codigo_alvo):
-    lista = sorted(disciplinas, key=lambda d: d["codigo"])
-    lo, hi = 0, len(lista) - 1
+    """Busca um codigo em uma lista previamente ordenada por codigo."""
+    lo, hi = 0, len(disciplinas) - 1
     while lo <= hi:
         meio = (lo + hi) // 2
-        atual = lista[meio]["codigo"]
+        atual = disciplinas[meio]["codigo"]
         if atual == codigo_alvo:
-            return lista[meio] 
+            return disciplinas[meio]
         if atual < codigo_alvo:
             lo = meio + 1
         else:
